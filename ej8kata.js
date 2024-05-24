@@ -4,17 +4,18 @@ const avengers = [
   'IronMan',
   'Captain A.',
   'Spiderman',
+  `la super hormiga atomica`,
   'Captain M.'
 ]
 function findLongestWord(long) {
+  let x = ``
   for (let i = 0; i < long.length; i++) {
     const element = long[i]
-    /* console.log(element) */
-    let x = 0
-    if (element.length > x) {
-      x = element.length
-      console.log(x)
+
+    if (element.length >= x.length) {
+      x = element
     } else {
+      return console.log(x)
     }
   }
 }
