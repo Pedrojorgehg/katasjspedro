@@ -7,12 +7,12 @@ const avengers = [
   'Captain M.'
 ]
 function findLongestWord(long) {
-  for (let long = 0; long < long.length; long++) {
-    const element = array[long]
+  for (let i = 0; i < long.length; i++) {
+    const element = long[i]
+    let alfa = [element.length]
+    console.log(alfa.length)
+    /*console.log(element.length) */
+    /*  console.log(Math.max(alfa)) */
   }
 }
-function cuenta(x) {
-  console.log(x)
-}
-const j = cuenta
-j(4)
+findLongestWord(avengers)
