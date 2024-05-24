@@ -9,10 +9,7 @@ const avengers = [
 function findLongestWord(long) {
   for (let i = 0; i < long.length; i++) {
     const element = long[i]
-    let alfa = [element.length]
-    console.log(alfa.length)
-    /*console.log(element.length) */
-    /*  console.log(Math.max(alfa)) */
+    console.log(element)
   }
 }
 findLongestWord(avengers)
