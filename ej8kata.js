@@ -7,16 +7,26 @@ const avengers = [
   `la super hormiga atomica`,
   'Captain M.'
 ]
-function findLongestWord(long) {
-  let x = ``
-  for (let i = 0; i < long.length; i++) {
-    const element = long[i]
 
-    if (element.length >= x.length) {
-      x = element
-    } else {
-      return console.log(x)
+function superFind(funy) {
+  const superfunny = []
+  for (let i = 0; i < funy.length; i++) {
+    const element = funy[i]
+    superfunny.push(element.length)
+  }
+  let thebasic = 0
+  let theBigPosition = superfunny[0]
+
+  for (let j = 1; j < superfunny.length; j++) {
+    if (superfunny[j] > theBigPosition) {
+      theBigPosition = superfunny[j]
+      thebasic = j
     }
   }
+
+  return thebasic
 }
-findLongestWord(avengers)
+const longestWordIndex = superFind(avengers)
+console.log(`La palabra más larga es: ${avengers[longestWordIndex]}`)
+
+superFind(avengers)
