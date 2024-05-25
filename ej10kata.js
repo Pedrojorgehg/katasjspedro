@@ -7,6 +7,6 @@ function average(param) {
     sumArray += element
   }
   result = sumArray / param.length
-  return console.log(`La meida es ` + result)
+  return console.log(`La media es ` + result)
 }
 average(numbers)
