@@ -9,3 +9,6 @@ const placesToTravel = [
   'Filipinas',
   'Madagascar'
 ]
+for (const iterator of placesToTravel) {
+  console.log(iterator)
+}
