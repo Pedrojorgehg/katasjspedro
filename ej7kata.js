@@ -1,3 +1,4 @@
+//*Completa la función que tomando dos números como argumento devuelva el más alto.
 function sum(x, y) {
   if (x > y) {
     console.log(x)
