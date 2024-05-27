@@ -11,7 +11,8 @@ function finderClothes(params) {
   for (let i = 0; i < params.length; i++) {
     const element = params[i]
     if (element.includes(`Camiseta`)) {
-      return console.log(element)
+      console.log(element)
     }
   }
 }
+finderClothes(products)
