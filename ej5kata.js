@@ -8,7 +8,7 @@ x = number3
 j = number2
 y = number1
 
-// ejemplo
+//* ejemplo
 if (number1 === 10) {
   console.log('number1 es estrictamente igual a 10')
 }
