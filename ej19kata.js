@@ -7,13 +7,14 @@ const toys = [
   { id: 40, name: 'El gato con Guantes' },
   { id: 40, name: 'El gato felix' }
 ]
-function catDeath(params) {
+function catKiller(params) {
   for (let i = 0; i < params.length; i++) {
     const element = params[i]
-    if (element.includes(`gato`)) {
-      params.pop(element)
+    if (element.name.includes(`gato`)) {
+      params.splice(i, 1)
       i--
     }
   }
   console.log(params)
 }
+catKiller(toys)
