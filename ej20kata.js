@@ -7,3 +7,12 @@ const toys = [
   { id: 40, name: 'El gato con Guantes', sellCount: 8 },
   { id: 40, name: 'El gato felix', sellCount: 35 }
 ]
+function bestSeller(params) {
+  for (const iterator of params) {
+    if (iterator.sellCount > 15) {
+      popularToys.push(iterator)
+    }
+  }
+  console.log(popularToys)
+}
+bestSeller(toys)
