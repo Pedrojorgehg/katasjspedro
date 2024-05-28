@@ -8,3 +8,13 @@ const placesToTravel = [
   { id: 44, name: 'Filipinas' },
   { id: 59, name: 'Madagascar' }
 ]
+function clean(params) {
+  for (let i = 0; i < params.length; i++) {
+    if (params[i].id == 11 || params[i].id == 40) {
+      params.splice(i, 1)
+    }
+  }
+  console.log(params)
+}
+
+clean(placesToTravel)
