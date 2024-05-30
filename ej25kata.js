@@ -5,3 +5,13 @@ const products = [
   { name: 'Sable laser FX', sellCount: 23 },
   { name: 'Varita de Voldemort', sellCount: 6 }
 ]
+function medium(params) {
+  let resul = 0
+  for (let i = 0; i < params.length; i++) {
+    const element = params[i]
+    resul += element.sellCount
+  }
+  console.log(resul)
+  return console.log(`la media de ventas es ${resul / params.length}`)
+}
+medium(products)
