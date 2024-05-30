@@ -16,7 +16,10 @@ function goodOrBad(params) {
       badProducts.push(element)
     }
   }
+  const goodProductsName = goodProducts.map((product) => product.name).join(`,`)
+  const badProductsName = badProducts.map((product) => product.name).join(`,`)
   return console.log(
-    `the good products are ${goodProducts} and de bad products are ${badProducts}`
+    `the good products are ${goodProductsName} and de bad products are ${badProductsName}`
   )
 }
+goodOrBad(products)
